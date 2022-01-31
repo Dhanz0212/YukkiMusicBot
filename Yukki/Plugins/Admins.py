@@ -143,7 +143,7 @@ async def admins(_, message: Message):
                         duration_min,
                         duration_min,
                     )
-                    thumb = "Utils/Telegram.JPEG"
+                    thumb = "https://telegra.ph/file/63267910585608a6302b0.jpg"
                     aud = 1
                 else:
                     _path_ = _path_ = (
