@@ -31,15 +31,15 @@ __MODULE__ = "Essentials"
 __HELP__ = """
 
 
-/start 
+/mstart 
 - Start the Bot.
 
 
-/help 
+/mhelp 
 - Get Commands Helper Menu.
 
 
-/settings 
+/msettings 
 - Get Settings button.
 """
 
@@ -94,7 +94,7 @@ async def welcome(_, message: Message):
             return
 
 
-@app.on_message(filters.command(["help", "start"]) & filters.group)
+@app.on_message(filters.command(["mhelp", "mstart"]) & filters.group)
 @PermissionCheck
 async def useradd(_, message: Message):
     out = start_pannel()
@@ -107,7 +107,7 @@ async def useradd(_, message: Message):
     )
 
 
-@app.on_message(filters.command("settings") & filters.group)
+@app.on_message(filters.command("msettings") & filters.group)
 @PermissionCheck
 async def settings(_, message: Message):
     c_id = message.chat.id
