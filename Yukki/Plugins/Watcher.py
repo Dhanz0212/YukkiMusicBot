@@ -7,7 +7,7 @@ from Yukki.Database import is_gbanned_user, is_on_off
 @app.on_message(filters.private & ~filters.user(SUDOERS))
 async def bot_forward(client, message):
     if await is_on_off(5):
-        if message.text == "/start":
+        if message.text == "/mstart":
             return
         try:
             await app.forward_messages(
