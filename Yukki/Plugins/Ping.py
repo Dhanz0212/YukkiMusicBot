@@ -29,7 +29,7 @@ Disk: {disk}%"""
     return stats
 
 
-@app.on_message(filters.command(["ping", f"ping@{BOT_USERNAME}"]))
+@app.on_message(filters.command(["mping", f"ping@{BOT_USERNAME}"]))
 async def ping(_, message):
     start = datetime.now()
     response = await message.reply_photo(
