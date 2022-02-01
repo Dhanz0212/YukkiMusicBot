@@ -157,7 +157,7 @@ async def play(_, message: Message):
         await mystic.delete()
         buttons = url_markup2(videoid, duration_min, message.from_user.id)
         return await message.reply_photo(
-            photo=thumb,
+            photo=https://telegra.ph/file/63267910585608a6302b0.jpg,
             caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
