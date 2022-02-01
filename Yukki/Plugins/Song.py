@@ -59,7 +59,7 @@ async def play(_, message: Message):
         await mystic.delete()
         buttons = song_download_markup(videoid, message.from_user.id)
         return await message.reply_photo(
-            photo=https://telegra.ph/file/63267910585608a6302b0.jpg,
+            photo=thumb,
             caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
@@ -85,7 +85,7 @@ async def play(_, message: Message):
             videoid, duration_min, message.from_user.id, query, 0
         )
         return await message.reply_photo(
-            photo=https://telegra.ph/file/63267910585608a6302b0.jpg,
+            photo=thumb,
             caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
@@ -136,7 +136,7 @@ async def song_right(_, CallbackQuery):
             videoid, duration_min, user_id, query, query_type
         )
         med = InputMediaPhoto(
-            media=https://telegra.ph/file/63267910585608a6302b0.jpg,
+            media=thumb,
             caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
         )
         return await CallbackQuery.edit_message_media(
@@ -161,7 +161,7 @@ async def song_right(_, CallbackQuery):
             videoid, duration_min, user_id, query, query_type
         )
         med = InputMediaPhoto(
-            media=https://telegra.ph/file/63267910585608a6302b0.jpg,
+            media=thumb,
             caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
         )
         return await CallbackQuery.edit_message_media(
